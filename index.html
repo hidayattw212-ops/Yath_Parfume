@@ -7,75 +7,59 @@
   <style>
     body {
       margin: 0;
+      padding: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #000000, #1a1a1a);
-      color: white;
-      text-align: center;
-      padding: 40px 20px;
-    }
-
-    .logo-img {
-      width: 120px;
-      height: auto;
-      margin-bottom: 15px;
-      border-radius: 50%;
-      box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
-    }
-
-    .brand-name {
-      font-size: 36px;
-      font-weight: bold;
+      background: linear-gradient(135deg, #000000, #2c2c2c);
       color: gold;
-      margin-bottom: 10px;
+      text-align: center;
     }
-
-    .tagline {
-      font-size: 16px;
-      color: #ddd;
-      margin-bottom: 30px;
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
     }
-
-    .link {
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .logo {
+      width: 150px;
+      margin-bottom: 20px;
+    }
+    .btn {
       display: block;
-      margin: 14px auto;
-      padding: 14px 22px;
-      width: 260px;
+      width: 220px;
+      margin: 10px auto;
+      padding: 12px;
       background: gold;
       color: black;
-      text-decoration: none;
-      border-radius: 50px;
       font-weight: bold;
-      font-size: 16px;
+      text-decoration: none;
+      border-radius: 8px;
       transition: 0.3s;
-      box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
     }
-
-    .link:hover {
-      background: #ffcc00;
-      transform: translateY(-3px);
-      box-shadow: 0 6px 14px rgba(255, 215, 0, 0.5);
+    .btn:hover {
+      background: #d4af37;
+      transform: scale(1.05);
     }
-
     footer {
-      margin-top: 50px;
-      font-size: 12px;
-      color: #888;
+      margin-top: 30px;
+      font-size: 0.8rem;
+      color: #ccc;
     }
   </style>
 </head>
 <body>
-  <!-- Logo -->
-  <img src="logo.png" alt="Logo Yath Parfume" class="logo-img">
-  <div class="brand-name">Yath Parfume</div>
-  <div class="tagline">Luxury in Every Scent</div>
-
-  <!-- Link Buttons -->
-  <a class="link" href="https://www.instagram.com/yath_parfume?igsh=azc5eTF2MnhyZXRl" target="_blank">📷 Instagram</a>
-  <a class="link" href="https://shopee.co.id/yath_parfume" target="_blank">🛒 Shopee</a>
-  <a class="link" href="https://wa.me/6281520952947" target="_blank">💬 WhatsApp</a>
-
-  <footer>
-    © 2024 Yath Parfume. All Rights Reserved.
-  </footer>
+  <div class="container">
+    <!-- Ganti src logo kalau sudah punya file logo sendiri -->
+    <img src="https://i.ibb.co/r2XbrnR/perfume-logo.png" alt="Yath Parfume Logo" class="logo">
+    <h1>Yath Parfume</h1>
+    <a href="https://wa.me/6281520952947" target="_blank" class="btn">✆ Chat via WhatsApp</a>
+    <a href="https://shopee.co.id/yath_parfume" target="_blank" class="btn">🆂 Beli di Shopee</a>
+    <a href="https://www.instagram.com/yath_parfume?igsh=azc5eTF2MnhyZXRl" target="_blank" class="btn">🅾 Follow Instagram</a>
+    <footer>© 2024 YATH PARFUME</footer>
+  </div>
 </body>
 </html>
